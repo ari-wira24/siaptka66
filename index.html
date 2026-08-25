@@ -365,7 +365,7 @@ function answer(ch,to){
 }
 $('next').onclick=()=>{if(S.i<QUIZ_SIZE-1){S.i++;render()}else finish()};
 function sendResultToGoogleSheets(payload){
-  if(!APPS_SCRIPT_URL || APPS_SCRIPT_URL.indexOf('https://script.google.com/macros/s/AKfycbzu_PXweqRmziBaMGAucBe8HsbCWPUjjrUkhg1_8maB5RXP7_SCimamN4Cv2Oyjy4WvDQ/exec')===0)return;
+  if(!APPS_SCRIPT_URL || APPS_SCRIPT_URL.indexOf('https://script.google.com/macros/s/AKfycbwZy8x6E7lSLoiLyYu7_agIe-cMEokRgJMGA10K5818_7qjiYOfwqnSHrH-frmYYrZuXA/exec')===0)return;
   const body=JSON.stringify(payload);
   try{
     if(navigator.sendBeacon){
